@@ -100,12 +100,6 @@ export default {
       type: "string",
       validation: (rule) => rule.required(),
     },
-    {
-      name: "linkUrl",
-      title: "Link URL",
-      type: "string",
-      validation: (rule) => rule.required(),
-    },
 
     /* Promotion Section */
     {
@@ -126,12 +120,6 @@ export default {
       type: "image",
       validation: (rule) => rule.required(),
     },
-    {
-      name: "promotionUrl",
-      title: "Promotion URL",
-      type: "string",
-      validation: (rule) => rule.required(),
-    },
 
     /* Community Section */
     {
@@ -143,12 +131,6 @@ export default {
     {
       name: "communitySubHeading",
       title: "Community Sub Heading",
-      type: "string",
-      validation: (rule) => rule.required(),
-    },
-    {
-      name: "communityUrl",
-      title: "Community URL",
       type: "string",
       validation: (rule) => rule.required(),
     },
@@ -179,6 +161,38 @@ export default {
       name: "twitter",
       title: "Twitter URL",
       type: "string",
+    },
+
+    /* Survey */
+    {
+      name: "surveyName",
+      title: "Survey Name: Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "surveyCommunityName",
+      title: "Survey Community Name: Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "surveyCommunitySize",
+      title: "Survey Community Size: Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "surveyCoverage",
+      title: "Survey Coverage: Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "surveyCreateAccount",
+      title: "Survey Create Account: Text",
+      type: "string",
+      validation: (rule) => rule.required(),
     },
   ],
 }
